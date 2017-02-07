@@ -12,21 +12,21 @@ private let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
     // MARK:- 懒加载属性
-    fileprivate lazy var pageTitleView : PageTitleView = {
+    fileprivate lazy var pageTitleView : PageTitleView = {[weak self] in
         let titleframe = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleframe, titles: titles)
+        titleView.delegate = self
         return titleView
     }()
     
-    fileprivate lazy var pageContentView : PageContentView = {
+    fileprivate lazy var pageContentView : PageContentView = {[weak self] in
         // 1.确定内容的 frame
         let contentH = kScreenH - kStatusBarH - kNavBarH - kTitleViewH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH + kTitleViewH, width: kScreenW, height: contentH)
         
         // 2.确定所有的子控制器
         var childVCs = [UIViewController]()
-        
         for i in 0..<4 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(
@@ -92,5 +92,12 @@ extension HomeViewController {
         let qrcodeItem = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
 
         navigationItem.rightBarButtonItems = [historyItem, searchItem, qrcodeItem]
+    }
+}
+
+// MARK:- 遵守 PageViewDelegate 协议
+extension HomeViewController : PageTitleViewDelegate {
+    func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
+        pageContentView.setCurrentIndex(currentIndex: index)
     }
 }
