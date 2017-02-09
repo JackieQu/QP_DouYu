@@ -35,6 +35,8 @@ class RecommendViewController: UIViewController {
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
         collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+//        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
         
@@ -87,7 +89,7 @@ extension RecommendViewController : UICollectionViewDataSource {
         // 1.取出 section 的 HeaderView
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
         
-        headerView.backgroundColor = UIColor.purple
+//        headerView.backgroundColor = UIColor.purple
         
         return headerView
     }
