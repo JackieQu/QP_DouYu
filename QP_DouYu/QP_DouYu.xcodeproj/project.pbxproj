@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28982E8A1E5440CE003B0E6A /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E891E5440CE003B0E6A /* NetworkTools.swift */; };
 		289B3A9C1E49B5BB00C0DC12 /* UIBarButtomItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B3A9B1E49B5BB00C0DC12 /* UIBarButtomItem-Extension.swift */; };
 		289B3A9E1E49C02900C0DC12 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B3A9D1E49C02900C0DC12 /* PageTitleView.swift */; };
 		289B3AA01E49C3DA00C0DC12 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B3A9F1E49C3DA00C0DC12 /* Common.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28982E891E5440CE003B0E6A /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		289B3A9B1E49B5BB00C0DC12 /* UIBarButtomItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtomItem-Extension.swift"; sourceTree = "<group>"; };
 		289B3A9D1E49C02900C0DC12 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		289B3A9F1E49C3DA00C0DC12 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				289B3A9A1E49B57A00C0DC12 /* Extension */,
+				28982E891E5440CE003B0E6A /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				289B3AC71E4F686F00C0DC12 /* CollectionViewPrettyCell.swift in Sources */,
 				28A364061E49A89600058475 /* MainViewController.swift in Sources */,
 				289B3AA01E49C3DA00C0DC12 /* Common.swift in Sources */,
+				28982E8A1E5440CE003B0E6A /* NetworkTools.swift in Sources */,
 				28A364081E49A8FD00058475 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
