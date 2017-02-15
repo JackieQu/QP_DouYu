@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28982E8A1E5440CE003B0E6A /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E891E5440CE003B0E6A /* NetworkTools.swift */; };
+		28982E911E54650F003B0E6A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E901E54650F003B0E6A /* RecommendViewModel.swift */; };
 		289B3A9C1E49B5BB00C0DC12 /* UIBarButtomItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B3A9B1E49B5BB00C0DC12 /* UIBarButtomItem-Extension.swift */; };
 		289B3A9E1E49C02900C0DC12 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B3A9D1E49C02900C0DC12 /* PageTitleView.swift */; };
 		289B3AA01E49C3DA00C0DC12 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B3A9F1E49C3DA00C0DC12 /* Common.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		28982E891E5440CE003B0E6A /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		28982E901E54650F003B0E6A /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		289B3A9B1E49B5BB00C0DC12 /* UIBarButtomItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtomItem-Extension.swift"; sourceTree = "<group>"; };
 		289B3A9D1E49C02900C0DC12 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		289B3A9F1E49C3DA00C0DC12 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -76,6 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28982E8D1E5464B4003B0E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28982E8E1E5464B4003B0E6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				28982E901E54650F003B0E6A /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		28982E8F1E5464D9003B0E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		289B3A9A1E49B57A00C0DC12 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +164,8 @@
 		28A363EC1E49965100058475 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				28A364001E49A83900058475 /* Model */,
+				28982E8E1E5464B4003B0E6A /* ViewModel */,
+				28982E8D1E5464B4003B0E6A /* Model */,
 				28A364011E49A83900058475 /* View */,
 				28A363FF1E49A83900058475 /* Controller */,
 			);
@@ -158,7 +183,7 @@
 		28A363EE1E49965100058475 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				28A364041E49A89600058475 /* Model */,
+				28982E8F1E5464D9003B0E6A /* Model */,
 				28A364051E49A89600058475 /* View */,
 				28A364021E49A89600058475 /* Controller */,
 			);
@@ -192,13 +217,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		28A364001E49A83900058475 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		28A364011E49A83900058475 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,13 +233,6 @@
 				28A364031E49A89600058475 /* MainViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		28A364041E49A89600058475 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		28A364051E49A89600058475 /* View */ = {
@@ -398,6 +409,7 @@
 				289B3AA01E49C3DA00C0DC12 /* Common.swift in Sources */,
 				28982E8A1E5440CE003B0E6A /* NetworkTools.swift in Sources */,
 				28A364081E49A8FD00058475 /* HomeViewController.swift in Sources */,
+				28982E911E54650F003B0E6A /* RecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
