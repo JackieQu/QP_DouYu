@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewNormalCell" customModule="QP_DouYu" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="182" height="133"/>
+            <rect key="frame" x="0.0" y="0.0" width="215" height="188"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="182" height="133"/>
+                <rect key="frame" x="0.0" y="0.0" width="215" height="188"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="VeW-t7-F9Q">
-                        <rect key="frame" x="0.0" y="109" width="14" height="14"/>
+                        <rect key="frame" x="0.0" y="164" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="DzU-dH-md2"/>
                             <constraint firstAttribute="height" constant="14" id="u2d-XZ-YZa"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仿写斗鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5g-Nl-a8z">
-                        <rect key="frame" x="19" y="109.5" width="158" height="13.5"/>
+                        <rect key="frame" x="19" y="164" width="191" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="NxI-8Z-aiC">
-                        <rect key="frame" x="0.0" y="0.0" width="182" height="104"/>
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="159"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="5"/>
@@ -41,13 +41,13 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JackieQu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JB3-SF-O1M">
-                        <rect key="frame" x="5" y="85.5" width="49" height="13.5"/>
+                        <rect key="frame" x="5" y="140" width="49" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-Fn-jhf" userLabel="100 在线">
-                        <rect key="frame" x="116" y="83" width="61" height="16"/>
+                        <rect key="frame" x="149" y="138" width="61" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="100 在线" image="Image_online"/>
                     </button>
@@ -68,8 +68,14 @@
                 <constraint firstAttribute="bottom" secondItem="VeW-t7-F9Q" secondAttribute="bottom" constant="10" id="wMx-BV-FSf"/>
                 <constraint firstItem="KcE-Fn-jhf" firstAttribute="trailing" secondItem="NxI-8Z-aiC" secondAttribute="trailing" constant="-5" id="ygY-bF-m6P"/>
             </constraints>
-            <size key="customSize" width="182" height="133"/>
-            <point key="canvasLocation" x="179" y="95.5"/>
+            <size key="customSize" width="215" height="188"/>
+            <connections>
+                <outlet property="iconImageView" destination="NxI-8Z-aiC" id="3hW-Sj-Tz2"/>
+                <outlet property="nickNameLabel" destination="JB3-SF-O1M" id="uVo-Xm-zOG"/>
+                <outlet property="onlineBtn" destination="KcE-Fn-jhf" id="qjg-1S-XtR"/>
+                <outlet property="roomNameLabel" destination="s5g-Nl-a8z" id="mU4-Kr-ntb"/>
+            </connections>
+            <point key="canvasLocation" x="162.5" y="123"/>
         </collectionViewCell>
     </objects>
     <resources>

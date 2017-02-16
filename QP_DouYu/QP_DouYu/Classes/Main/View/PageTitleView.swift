@@ -132,7 +132,7 @@ extension PageTitleView {
         
         // 3.切换文字颜色
         if currentLabel.tag == oldLabel.tag {
-            
+            return
         } else {
             currentLabel.textColor = UIColor.init(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
             oldLabel.textColor = UIColor.init(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)

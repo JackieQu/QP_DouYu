@@ -6,5 +6,6 @@ use_frameworks!
 target 'QP_DouYu' do
 
 pod 'Alamofire'
+pod 'Kingfisher'
 
 end
