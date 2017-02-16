@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CollectionHeaderView" customModule="QP_DouYu" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -59,6 +59,10 @@
                 <constraint firstAttribute="bottom" secondItem="uCs-AP-lmU" secondAttribute="bottom" constant="5" id="w1R-W4-o8w"/>
                 <constraint firstItem="J36-fa-dBc" firstAttribute="top" secondItem="kpR-MX-Zwi" secondAttribute="bottom" constant="11" id="z2E-Dn-IpT"/>
             </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="J36-fa-dBc" id="7al-fm-hBU"/>
+                <outlet property="titleLabel" destination="dih-5y-7CK" id="F1t-Z0-gYk"/>
+            </connections>
             <point key="canvasLocation" x="28.5" y="58"/>
         </collectionReusableView>
     </objects>
