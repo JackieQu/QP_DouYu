@@ -92,6 +92,8 @@ extension RecommendViewController {
     fileprivate func loadData() {
         recommendVM.requestData {
             self.collectionView.reloadData()
+            
+            self.gameView.groups = self.recommendVM.anchorGroups
         }
         
         recommendVM.requestCycleData {

@@ -9,8 +9,25 @@
 import UIKit
 
 private let kGameCellID = "kGameCellID"
+private let kEdgeInsetsMargin : CGFloat = 10
 
 class RecommendGameView: UIView {
+    // MARK:- 定义数据的属性
+    var groups : [AnchorGroup]? {
+        didSet {
+            groups?.removeFirst()
+            groups?.removeFirst()
+            groups?.remove(at: 1)
+            groups?.remove(at: 1)
+
+            
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups?.append(moreGroup)
+            
+            collectionView.reloadData()
+        }
+    }
     
     // MARK:- 控件属性
     @IBOutlet weak var collectionView: UICollectionView!
@@ -22,7 +39,10 @@ class RecommendGameView: UIView {
         autoresizingMask = .init(rawValue: 0)
         
         // 注册 cell
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kGameCellID)
+        collectionView.register(UINib(nibName: "CollectionViewGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
+        
+        // 设置 collectionView 内边距
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: kEdgeInsetsMargin, bottom: 0, right: kEdgeInsetsMargin)
     }
 }
 
@@ -36,13 +56,15 @@ extension RecommendGameView {
 // MARK:- 遵守 UICollectionView 的数据源协议
 extension RecommendGameView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return groups?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! CollectionViewGameCell
         
-        cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.red : UIColor.blue
+        cell.group = groups![indexPath.item]
+        
+//        cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.red : UIColor.blue
         
         return cell
     }

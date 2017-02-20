@@ -42,6 +42,8 @@
 		28B80B7C1E56142200484888 /* CollectionViewCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B80B7A1E56142200484888 /* CollectionViewCycleCell.xib */; };
 		28B80B7E1E59A56100484888 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B80B7D1E59A56100484888 /* RecommendGameView.swift */; };
 		28B80B801E59A56E00484888 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B80B7F1E59A56E00484888 /* RecommendGameView.xib */; };
+		28B80B871E59F31100484888 /* CollectionViewGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B80B851E59F31100484888 /* CollectionViewGameCell.swift */; };
+		28B80B881E59F31100484888 /* CollectionViewGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B80B861E59F31100484888 /* CollectionViewGameCell.xib */; };
 		2D71D6D187447BB677BA2199 /* Pods_QP_DouYu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFC9E29913334827549F1BF /* Pods_QP_DouYu.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		28B80B7A1E56142200484888 /* CollectionViewCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCycleCell.xib; sourceTree = "<group>"; };
 		28B80B7D1E59A56100484888 /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
 		28B80B7F1E59A56E00484888 /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
+		28B80B851E59F31100484888 /* CollectionViewGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewGameCell.swift; sourceTree = "<group>"; };
+		28B80B861E59F31100484888 /* CollectionViewGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewGameCell.xib; sourceTree = "<group>"; };
 		7DB5F7DF059E01AFA127A0A0 /* Pods-QP_DouYu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QP_DouYu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QP_DouYu/Pods-QP_DouYu.debug.xcconfig"; sourceTree = "<group>"; };
 		9EFC9E29913334827549F1BF /* Pods_QP_DouYu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QP_DouYu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E5C4A196AD6C72F6F02861 /* Pods-QP_DouYu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QP_DouYu.release.xcconfig"; path = "Pods/Target Support Files/Pods-QP_DouYu/Pods-QP_DouYu.release.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 				28B80B7A1E56142200484888 /* CollectionViewCycleCell.xib */,
 				28B80B7D1E59A56100484888 /* RecommendGameView.swift */,
 				28B80B7F1E59A56E00484888 /* RecommendGameView.xib */,
+				28B80B851E59F31100484888 /* CollectionViewGameCell.swift */,
+				28B80B861E59F31100484888 /* CollectionViewGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				28A363DE1E49813400058475 /* Main.storyboard in Resources */,
 				289B3AC81E4F686F00C0DC12 /* CollectionViewPrettyCell.xib in Resources */,
 				28A363F61E49A07A00058475 /* Live.storyboard in Resources */,
+				28B80B881E59F31100484888 /* CollectionViewGameCell.xib in Resources */,
 				289B3AC41E4CCA5800C0DC12 /* CollectionViewNormalCell.xib in Resources */,
 				28B80B761E55AD6200484888 /* RecommendCycleView.xib in Resources */,
 				28A363F31E49A04200058475 /* Home.storyboard in Resources */,
@@ -446,6 +453,7 @@
 				289B3AA21E49D38D00C0DC12 /* PageContentView.swift in Sources */,
 				28B80B6C1E557C9B00484888 /* CollectionViewBaseCell.swift in Sources */,
 				28B80B7E1E59A56100484888 /* RecommendGameView.swift in Sources */,
+				28B80B871E59F31100484888 /* CollectionViewGameCell.swift in Sources */,
 				289B3AC71E4F686F00C0DC12 /* CollectionViewPrettyCell.swift in Sources */,
 				28A364061E49A89600058475 /* MainViewController.swift in Sources */,
 				28982E991E549BC6003B0E6A /* NSDate-Extension.swift in Sources */,
