@@ -28,7 +28,8 @@ class HomeViewController: UIViewController {
         // 2.确定所有的子控制器
         var childVCs = [UIViewController]()
         childVCs.append(RecommendViewController())
-        for i in 0..<3 {
+        childVCs.append(GameViewController())
+        for i in 0..<2 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(
                 r: CGFloat(arc4random_uniform(255)),

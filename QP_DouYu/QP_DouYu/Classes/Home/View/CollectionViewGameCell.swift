@@ -26,6 +26,8 @@ class CollectionViewGameCell: UICollectionViewCell {
                 iconImageView.image = UIImage(named: "home_more_btn")
             }
             
+//            let iconURL = URL(string: group?.icon_url ?? "")!
+//            iconImageView.kf.setImage(with: iconURL, placeholder: UIImage(named: "home_more_btn"))
         }
     }
     
