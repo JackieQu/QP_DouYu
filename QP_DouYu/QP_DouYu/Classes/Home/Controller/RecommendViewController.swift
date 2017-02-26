@@ -92,8 +92,16 @@ extension RecommendViewController {
     fileprivate func loadData() {
         recommendVM.requestData {
             self.collectionView.reloadData()
+        
+            var groups = self.recommendVM.anchorGroups
+            groups.removeFirst()
+            groups.removeFirst()    
             
-            self.gameView.groups = self.recommendVM.anchorGroups
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            self.gameView.groups = groups   //self.recommendVM.anchorGroups
         }
         
         recommendVM.requestCycleData {
