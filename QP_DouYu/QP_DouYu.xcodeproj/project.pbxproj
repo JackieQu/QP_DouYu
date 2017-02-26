@@ -48,6 +48,7 @@
 		28FCBC091E6275730064B9EB /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC081E6275730064B9EB /* GameViewModel.swift */; };
 		28FCBC0B1E6278F50064B9EB /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC0A1E6278F50064B9EB /* GameModel.swift */; };
 		28FCBC0D1E627AF60064B9EB /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC0C1E627AF60064B9EB /* BaseGameModel.swift */; };
+		28FCBC0F1E62D6360064B9EB /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC0E1E62D6360064B9EB /* AmuseViewController.swift */; };
 		2D71D6D187447BB677BA2199 /* Pods_QP_DouYu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFC9E29913334827549F1BF /* Pods_QP_DouYu.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		28FCBC081E6275730064B9EB /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		28FCBC0A1E6278F50064B9EB /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		28FCBC0C1E627AF60064B9EB /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
+		28FCBC0E1E62D6360064B9EB /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
 		7DB5F7DF059E01AFA127A0A0 /* Pods-QP_DouYu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QP_DouYu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QP_DouYu/Pods-QP_DouYu.debug.xcconfig"; sourceTree = "<group>"; };
 		9EFC9E29913334827549F1BF /* Pods_QP_DouYu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QP_DouYu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E5C4A196AD6C72F6F02861 /* Pods-QP_DouYu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QP_DouYu.release.xcconfig"; path = "Pods/Target Support Files/Pods-QP_DouYu/Pods-QP_DouYu.release.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				28A364071E49A8FD00058475 /* HomeViewController.swift */,
 				289B3ABB1E4AE59100C0DC12 /* RecommendViewController.swift */,
 				28FCBC061E5C254C0064B9EB /* GameViewController.swift */,
+				28FCBC0E1E62D6360064B9EB /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				28FCBC0B1E6278F50064B9EB /* GameModel.swift in Sources */,
 				28FCBC0D1E627AF60064B9EB /* BaseGameModel.swift in Sources */,
 				28B80B7B1E56142200484888 /* CollectionViewCycleCell.swift in Sources */,
+				28FCBC0F1E62D6360064B9EB /* AmuseViewController.swift in Sources */,
 				289B3A9E1E49C02900C0DC12 /* PageTitleView.swift in Sources */,
 				289B3AA21E49D38D00C0DC12 /* PageContentView.swift in Sources */,
 				28B80B6C1E557C9B00484888 /* CollectionViewBaseCell.swift in Sources */,
