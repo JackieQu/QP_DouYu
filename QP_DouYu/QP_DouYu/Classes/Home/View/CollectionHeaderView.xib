@@ -25,7 +25,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="J36-fa-dBc">
                     <rect key="frame" x="10" y="21" width="18" height="18"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="18" id="1tG-LL-sdn"/>
                         <constraint firstAttribute="height" constant="18" id="Ox0-bt-RwC"/>
                     </constraints>
                 </imageView>
@@ -61,6 +60,7 @@
             </constraints>
             <connections>
                 <outlet property="iconImageView" destination="J36-fa-dBc" id="7al-fm-hBU"/>
+                <outlet property="moreBtn" destination="uCs-AP-lmU" id="gkc-fJ-IMV"/>
                 <outlet property="titleLabel" destination="dih-5y-7CK" id="F1t-Z0-gYk"/>
             </connections>
             <point key="canvasLocation" x="28.5" y="58"/>
