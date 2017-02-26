@@ -45,6 +45,9 @@
 		28B80B871E59F31100484888 /* CollectionViewGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B80B851E59F31100484888 /* CollectionViewGameCell.swift */; };
 		28B80B881E59F31100484888 /* CollectionViewGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B80B861E59F31100484888 /* CollectionViewGameCell.xib */; };
 		28FCBC071E5C254C0064B9EB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC061E5C254C0064B9EB /* GameViewController.swift */; };
+		28FCBC091E6275730064B9EB /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC081E6275730064B9EB /* GameViewModel.swift */; };
+		28FCBC0B1E6278F50064B9EB /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC0A1E6278F50064B9EB /* GameModel.swift */; };
+		28FCBC0D1E627AF60064B9EB /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FCBC0C1E627AF60064B9EB /* BaseGameModel.swift */; };
 		2D71D6D187447BB677BA2199 /* Pods_QP_DouYu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFC9E29913334827549F1BF /* Pods_QP_DouYu.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +92,9 @@
 		28B80B851E59F31100484888 /* CollectionViewGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewGameCell.swift; sourceTree = "<group>"; };
 		28B80B861E59F31100484888 /* CollectionViewGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewGameCell.xib; sourceTree = "<group>"; };
 		28FCBC061E5C254C0064B9EB /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		28FCBC081E6275730064B9EB /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		28FCBC0A1E6278F50064B9EB /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		28FCBC0C1E627AF60064B9EB /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		7DB5F7DF059E01AFA127A0A0 /* Pods-QP_DouYu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QP_DouYu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QP_DouYu/Pods-QP_DouYu.debug.xcconfig"; sourceTree = "<group>"; };
 		9EFC9E29913334827549F1BF /* Pods_QP_DouYu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QP_DouYu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E5C4A196AD6C72F6F02861 /* Pods-QP_DouYu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QP_DouYu.release.xcconfig"; path = "Pods/Target Support Files/Pods-QP_DouYu/Pods-QP_DouYu.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				28B80B771E55EA0E00484888 /* CycleModel.swift */,
+				28FCBC0A1E6278F50064B9EB /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				28982E901E54650F003B0E6A /* RecommendViewModel.swift */,
+				28FCBC081E6275730064B9EB /* GameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		28982E8F1E5464D9003B0E6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				28FCBC0C1E627AF60064B9EB /* BaseGameModel.swift */,
 				28982E9A1E549F98003B0E6A /* AnchorGroup.swift */,
 				28982E9C1E554383003B0E6A /* AnchorModel.swift */,
 			);
@@ -445,6 +454,7 @@
 				28B80B741E55AD4100484888 /* RecommendCycleView.swift in Sources */,
 				28A363D91E49813400058475 /* AppDelegate.swift in Sources */,
 				289B3ABF1E4B76F600C0DC12 /* CollectionHeaderView.swift in Sources */,
+				28FCBC091E6275730064B9EB /* GameViewModel.swift in Sources */,
 				289B3AA41E49D90200C0DC12 /* UIColor-Extension.swift in Sources */,
 				28FCBC071E5C254C0064B9EB /* GameViewController.swift in Sources */,
 				289B3ABC1E4AE59200C0DC12 /* RecommendViewController.swift in Sources */,
@@ -452,6 +462,8 @@
 				289B3A9C1E49B5BB00C0DC12 /* UIBarButtomItem-Extension.swift in Sources */,
 				289B3AC31E4CCA5800C0DC12 /* CollectionViewNormalCell.swift in Sources */,
 				28B80B781E55EA0E00484888 /* CycleModel.swift in Sources */,
+				28FCBC0B1E6278F50064B9EB /* GameModel.swift in Sources */,
+				28FCBC0D1E627AF60064B9EB /* BaseGameModel.swift in Sources */,
 				28B80B7B1E56142200484888 /* CollectionViewCycleCell.swift in Sources */,
 				289B3A9E1E49C02900C0DC12 /* PageTitleView.swift in Sources */,
 				289B3AA21E49D38D00C0DC12 /* PageContentView.swift in Sources */,

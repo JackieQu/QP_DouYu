@@ -62,7 +62,7 @@ extension RecommendGameView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! CollectionViewGameCell
         
-        cell.group = groups![indexPath.item]
+        cell.baseGame = groups![indexPath.item]
         
 //        cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.red : UIColor.blue
         
