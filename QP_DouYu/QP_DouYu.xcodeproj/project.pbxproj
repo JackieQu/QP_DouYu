@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285006701E6946F900B281FA /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850066F1E6946F900B281FA /* AmuseViewModel.swift */; };
 		28982E8A1E5440CE003B0E6A /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E891E5440CE003B0E6A /* NetworkTools.swift */; };
 		28982E911E54650F003B0E6A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E901E54650F003B0E6A /* RecommendViewModel.swift */; };
 		28982E971E549B29003B0E6A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E961E549B29003B0E6A /* Common.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2850066F1E6946F900B281FA /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		28982E891E5440CE003B0E6A /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		28982E901E54650F003B0E6A /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		28982E961E549B29003B0E6A /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				28982E901E54650F003B0E6A /* RecommendViewModel.swift */,
 				28FCBC081E6275730064B9EB /* GameViewModel.swift */,
+				2850066F1E6946F900B281FA /* AmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			files = (
 				28B80B741E55AD4100484888 /* RecommendCycleView.swift in Sources */,
 				28A363D91E49813400058475 /* AppDelegate.swift in Sources */,
+				285006701E6946F900B281FA /* AmuseViewModel.swift in Sources */,
 				289B3ABF1E4B76F600C0DC12 /* CollectionHeaderView.swift in Sources */,
 				28FCBC091E6275730064B9EB /* GameViewModel.swift in Sources */,
 				289B3AA41E49D90200C0DC12 /* UIColor-Extension.swift in Sources */,
