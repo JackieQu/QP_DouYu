@@ -10,6 +10,8 @@
 		285006701E6946F900B281FA /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850066F1E6946F900B281FA /* AmuseViewModel.swift */; };
 		285006731E6B103D00B281FA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285006721E6B103D00B281FA /* BaseViewModel.swift */; };
 		285006751E6B12F100B281FA /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285006741E6B12F100B281FA /* BaseAnchorViewController.swift */; };
+		285006771E6CFCAA00B281FA /* AmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285006761E6CFCAA00B281FA /* AmuseMenuView.swift */; };
+		285006791E6CFCC800B281FA /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285006781E6CFCC800B281FA /* AmuseMenuView.xib */; };
 		28982E8A1E5440CE003B0E6A /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E891E5440CE003B0E6A /* NetworkTools.swift */; };
 		28982E911E54650F003B0E6A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E901E54650F003B0E6A /* RecommendViewModel.swift */; };
 		28982E971E549B29003B0E6A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28982E961E549B29003B0E6A /* Common.swift */; };
@@ -59,6 +61,8 @@
 		2850066F1E6946F900B281FA /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		285006721E6B103D00B281FA /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		285006741E6B12F100B281FA /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
+		285006761E6CFCAA00B281FA /* AmuseMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuView.swift; sourceTree = "<group>"; };
+		285006781E6CFCC800B281FA /* AmuseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
 		28982E891E5440CE003B0E6A /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		28982E901E54650F003B0E6A /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		28982E961E549B29003B0E6A /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -291,6 +295,8 @@
 				28B80B7F1E59A56E00484888 /* RecommendGameView.xib */,
 				28B80B851E59F31100484888 /* CollectionViewGameCell.swift */,
 				28B80B861E59F31100484888 /* CollectionViewGameCell.xib */,
+				285006761E6CFCAA00B281FA /* AmuseMenuView.swift */,
+				285006781E6CFCC800B281FA /* AmuseMenuView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +413,7 @@
 				28A363F61E49A07A00058475 /* Live.storyboard in Resources */,
 				28B80B881E59F31100484888 /* CollectionViewGameCell.xib in Resources */,
 				289B3AC41E4CCA5800C0DC12 /* CollectionViewNormalCell.xib in Resources */,
+				285006791E6CFCC800B281FA /* AmuseMenuView.xib in Resources */,
 				28B80B761E55AD6200484888 /* RecommendCycleView.xib in Resources */,
 				28A363F31E49A04200058475 /* Home.storyboard in Resources */,
 				28A363FC1E49A0D500058475 /* Profile.storyboard in Resources */,
@@ -496,6 +503,7 @@
 				28B80B871E59F31100484888 /* CollectionViewGameCell.swift in Sources */,
 				289B3AC71E4F686F00C0DC12 /* CollectionViewPrettyCell.swift in Sources */,
 				28A364061E49A89600058475 /* MainViewController.swift in Sources */,
+				285006771E6CFCAA00B281FA /* AmuseMenuView.swift in Sources */,
 				28982E991E549BC6003B0E6A /* NSDate-Extension.swift in Sources */,
 				28982E8A1E5440CE003B0E6A /* NetworkTools.swift in Sources */,
 				28A364081E49A8FD00058475 /* HomeViewController.swift in Sources */,
