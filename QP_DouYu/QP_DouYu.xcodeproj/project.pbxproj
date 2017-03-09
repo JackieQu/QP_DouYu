@@ -10,6 +10,7 @@
 		282F15061E7023C80014DA3D /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F15041E7023C80014DA3D /* AmuseMenuViewCell.swift */; };
 		282F15071E7023C80014DA3D /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282F15051E7023C80014DA3D /* AmuseMenuViewCell.xib */; };
 		282F15091E7121CF0014DA3D /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F15081E7121CF0014DA3D /* FunnyViewController.swift */; };
+		282F150B1E7129340014DA3D /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F150A1E7129340014DA3D /* FunnyViewModel.swift */; };
 		285006701E6946F900B281FA /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850066F1E6946F900B281FA /* AmuseViewModel.swift */; };
 		285006731E6B103D00B281FA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285006721E6B103D00B281FA /* BaseViewModel.swift */; };
 		285006751E6B12F100B281FA /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285006741E6B12F100B281FA /* BaseAnchorViewController.swift */; };
@@ -64,6 +65,7 @@
 		282F15041E7023C80014DA3D /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
 		282F15051E7023C80014DA3D /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		282F15081E7121CF0014DA3D /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		282F150A1E7129340014DA3D /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		2850066F1E6946F900B281FA /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		285006721E6B103D00B281FA /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		285006741E6B12F100B281FA /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				28982E901E54650F003B0E6A /* RecommendViewModel.swift */,
 				28FCBC081E6275730064B9EB /* GameViewModel.swift */,
 				2850066F1E6946F900B281FA /* AmuseViewModel.swift */,
+				282F150A1E7129340014DA3D /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				285006731E6B103D00B281FA /* BaseViewModel.swift in Sources */,
 				28B80B781E55EA0E00484888 /* CycleModel.swift in Sources */,
 				28FCBC0B1E6278F50064B9EB /* GameModel.swift in Sources */,
+				282F150B1E7129340014DA3D /* FunnyViewModel.swift in Sources */,
 				28FCBC0D1E627AF60064B9EB /* BaseGameModel.swift in Sources */,
 				28B80B7B1E56142200484888 /* CollectionViewCycleCell.swift in Sources */,
 				28FCBC0F1E62D6360064B9EB /* AmuseViewController.swift in Sources */,
