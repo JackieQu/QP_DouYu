@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,17 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYw-13-843">
-                                <rect key="frame" x="46" y="578" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYw-13-843">
+                                <rect key="frame" x="56" y="597" width="62" height="30"/>
                                 <state key="normal" title="开始采集"/>
                                 <connections>
                                     <action selector="startCapture" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVM-p9-1Vu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWg-b2-caL">
-                                <rect key="frame" x="263" y="578" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWg-b2-caL">
+                                <rect key="frame" x="257" y="597" width="62" height="30"/>
                                 <state key="normal" title="停止采集"/>
                                 <connections>
                                     <action selector="stopCapture" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCh-qW-xHb"/>
@@ -39,6 +38,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fYw-13-843" secondAttribute="bottom" constant="40" id="QeX-D7-ByO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IWg-b2-caL" secondAttribute="bottom" constant="40" id="cam-1V-y5J"/>
+                            <constraint firstItem="fYw-13-843" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="dBH-mV-2MB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IWg-b2-caL" secondAttribute="trailing" constant="40" id="oBh-Kr-Oqv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

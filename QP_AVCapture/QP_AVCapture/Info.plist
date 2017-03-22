@@ -31,8 +31,10 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>需要获得摄像头权限</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>需要获得麦克风权限</string>
 </dict>
 </plist>
