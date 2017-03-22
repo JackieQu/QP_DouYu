@@ -21,14 +21,26 @@ class ViewController: UIViewController {
 //    fileprivate var connection : AVCaptureConnection?
     fileprivate var videoOutput : AVCaptureVideoDataOutput?
     fileprivate var videoInput : AVCaptureDeviceInput?
+    fileprivate var movieOutput : AVCaptureMovieFileOutput?
 }
 
 // MARK:- 视频的开始采集、停止采集
 extension ViewController {
     @IBAction func startCapture() {
-        
+        // 1.设置视频输入、输出
         setupVideo()
+        
+        // 2.设置音频输入、输出
         setupAudio()
+        
+        // 3.添加写入文件的 output
+        let movieOutput = AVCaptureMovieFileOutput()
+        session.addOutput(movieOutput)
+        self.movieOutput = movieOutput
+        // 设置写入稳定性
+        let connection = movieOutput.connection(withMediaType: AVMediaTypeVideo)
+        connection?.preferredVideoStabilizationMode = .auto
+
         // 4.设置预览图层
 //        let previewLayer = AVCaptureVideoPreviewLayer(session: session)
 //        previewLayer?.frame = view.bounds
@@ -39,9 +51,17 @@ extension ViewController {
         
         // 5.开始采集
         session.startRunning()
+        
+        // 6.将采集到的画面写入到文件中
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/test.mp4"
+        let url = URL(fileURLWithPath: path)
+        movieOutput.startRecording(toOutputFileURL: url, recordingDelegate: self)
     }
     
     @IBAction func stopCapture() {
+        // 停止写入
+        movieOutput?.stopRecording()
+        // 停止采集
         session.stopRunning()
         previewLayer.removeFromSuperlayer()
         print("停止采集")
@@ -147,6 +167,17 @@ extension ViewController : AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptu
         } else {
             print("已经采集音频--audio")
         }
+    }
+}
+
+// MARK:- 
+extension ViewController : AVCaptureFileOutputRecordingDelegate {
+    func capture(_ captureOutput: AVCaptureFileOutput!, didStartRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
+        print("开始写入文件")
+    }
+    
+    func capture(_ captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAt outputFileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
+        print("结束写入文件")
     }
 }
 
