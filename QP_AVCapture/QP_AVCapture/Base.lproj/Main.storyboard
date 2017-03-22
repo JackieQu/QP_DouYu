@@ -36,11 +36,20 @@
                                     <action selector="stopCapture" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCh-qW-xHb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oo-ge-dPI">
+                                <rect key="frame" x="56" y="527" width="62" height="30"/>
+                                <state key="normal" title="切换镜头"/>
+                                <connections>
+                                    <action selector="switchScene" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLA-9J-BgU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fYw-13-843" firstAttribute="top" secondItem="4oo-ge-dPI" secondAttribute="bottom" constant="40" id="ID9-Co-BGU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fYw-13-843" secondAttribute="bottom" constant="40" id="QeX-D7-ByO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IWg-b2-caL" secondAttribute="bottom" constant="40" id="cam-1V-y5J"/>
+                            <constraint firstItem="4oo-ge-dPI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="d2p-XG-DS8"/>
                             <constraint firstItem="fYw-13-843" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="dBH-mV-2MB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IWg-b2-caL" secondAttribute="trailing" constant="40" id="oBh-Kr-Oqv"/>
                         </constraints>

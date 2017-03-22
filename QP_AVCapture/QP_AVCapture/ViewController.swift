@@ -18,11 +18,9 @@ class ViewController: UIViewController {
     fileprivate lazy var session : AVCaptureSession = AVCaptureSession()
     fileprivate lazy var previewLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.session)
     
-    fileprivate var connection : AVCaptureConnection?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+//    fileprivate var connection : AVCaptureConnection?
+    fileprivate var videoOutput : AVCaptureVideoDataOutput?
+    fileprivate var videoInput : AVCaptureDeviceInput?
 }
 
 // MARK:- 视频的开始采集、停止采集
@@ -47,6 +45,30 @@ extension ViewController {
         session.stopRunning()
         previewLayer.removeFromSuperlayer()
         print("停止采集")
+    }
+    
+    @IBAction func switchScene() {
+        // 1.获取当前镜头
+        guard var position = videoInput?.device.position else { return }
+        
+        // 2.获取将要显示镜头
+        position = position == .front ? .back : .front
+        
+        // 3.根据将要显示镜头创建 device
+        let devices = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo) as! [AVCaptureDevice]
+        guard let device = devices.filter({ $0.position == position }).first else { return }
+        
+        // 4.根据 device 创建 input
+        guard let videoInput = try? AVCaptureDeviceInput(device: device) else { return }
+        
+        // 5.在 session 中切换 input
+        session.beginConfiguration()
+        session.removeInput(self.videoInput!)
+        session.addInput(videoInput)
+        session.commitConfiguration()
+        
+        print("切换镜头")
+        self.videoInput = videoInput
     }
 }
 
@@ -83,6 +105,7 @@ extension ViewController {
         
         // 2.2.通过 device 创建 AVCaptureInput 对象
         guard let videoInput = try? AVCaptureDeviceInput(device: device) else { return }
+        self.videoInput = videoInput
         
         // 2.3.将 input 添加到会话中
         session.addInput(videoInput)
@@ -94,7 +117,8 @@ extension ViewController {
         session.addOutput(videoOutput)
         
         // 4.获取 video 对应的 connection
-        connection = videoOutput.connection(withMediaType: AVMediaTypeVideo)
+//        connection = videoOutput.connection(withMediaType: AVMediaTypeVideo)
+        self.videoOutput = videoOutput
     }
     
     fileprivate func setupAudio() {
@@ -118,7 +142,7 @@ extension ViewController {
 // MARK:- 获取数据
 extension ViewController : AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
-        if connection == self.connection {
+        if connection == videoOutput?.connection(withMediaType: AVMediaTypeVideo) {
             print("已经采集视频—-video")
         } else {
             print("已经采集音频--audio")
